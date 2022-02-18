@@ -3,11 +3,12 @@ from keras_segmentation.predict import visualize_segmentation
 import cv2
 import io
 import base64
+import pandas as pd
 
 model = pspnet_50_ADE_20K()
 
 
-def compute(image_path):
+def compute(image_path:pd.DataFrame):
     out = model.predict_segmentation(
         inp=image_path
     )
