@@ -1,4 +1,4 @@
-opencv-python-headless
+opencv-python==4.5.5.62
 tensorflow==2.4.1
 keras==2.4.3
 keras-segmentation==0.3.0
